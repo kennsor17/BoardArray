@@ -14,11 +14,6 @@ class BoardArray : public Board {
         }
 
         void add(Entry* entry) {
-            // TODO: IMPLEMENT THIS FUNCTION
-            // ALGORITHM IS PROVIDED IN INSTRUCTIONS.TXT
-        }
-
-        void add(Entry* entry) {
             if (index >= SIZE) {
                 cout << "Board is full!" << endl;
                 return;
@@ -32,8 +27,8 @@ class BoardArray : public Board {
                 i--;
             }
 
-    index++;
-}
+            index++;
+        }
 
         void print() {
             for (int i = 0; i < index; i++) {
